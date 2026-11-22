@@ -1,0 +1,17 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AgriSense Dashboard</title>
+</head>
+<body>
+    <h1>Welcome to AgriSense</h1>
+
+    <form method="POST" action="{% url 'logout' %}">
+        {% csrf_token %}
+        <button type="submit">Logout</button>
+    </form>
+
+</body>
+</html>
